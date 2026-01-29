@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo-text {
+  font-family: 'Satisfy', cursive !important;
+}
+
+:root {
+  --bg-foundation: #000000;
+  --surface: #121212;
+  --hover: #1a1a1a;
+  --secondary: #71717a;
+  --active: #ffffff;
+  --active-text: #000000;
+
+  /* Popup-specific (purple & black theme) */
+  --popup-bg: #2b0036;
+  /* deep purple */
+  --popup-accent: #9b59b6;
+  /* lighter purple for primary CTA */
+  --popup-text: #000000;
+  /* black text on popup */
+  --popup-contrast: #ffffff;
+  /* white for subtle contrast */
+}
+
+/* Ensure all buttons inside the customer dashboard have a 50px radius */
+.dashboard-content-wrapper button,
+.dashboard-content-wrapper input[type="submit"],
+.dashboard-content-wrapper .btn,
+.dashboard-content-wrapper [role="button"] {
+  border-radius: 50px !important;
+}
+
+/* Respect existing circular buttons: leave rounded-full unchanged */
+.dashboard-content-wrapper .rounded-full {
+  border-radius: 9999px !important;
+}
+
+/* Override global dashboard button styles for specific modals */
+.delivery-instructions-modal button {
+  border-radius: 0.5rem !important;
+  /* Standard rounded matching the design */
+}
+
+/* Also override for rounded-full buttons inside the modal to keep them round if needed */
+.delivery-instructions-modal .rounded-full {
+  border-radius: 9999px !important;
+}
+
+@keyframes highlightAction {
+  0% {
+    border-color: #a855f7;
+    box-shadow: 0 0 0px rgba(168, 85, 247, 0);
+  }
+
+  50% {
+    border-color: #ffffff;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    transform: scale(1.02);
+  }
+
+  100% {
+    border-color: #a855f7;
+    box-shadow: 0 0 0px rgba(168, 85, 247, 0);
+  }
+}
+
+.highlight-pulse {
+  animation: highlightAction 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}

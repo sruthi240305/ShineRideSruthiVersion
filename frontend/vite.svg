@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="viteGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#646CFF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="boltGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#FFB703"/>
+    </linearGradient>
+  </defs>
+  <g fill="none">
+    <path d="M128 16L24 64l18 144 86 32 86-32 18-144z" fill="url(#viteGradient)"/>
+    <path d="M146 44l-42 84h36l-16 84 64-120h-36l16-48z" fill="url(#boltGradient)"/>
+  </g>
+</svg>
