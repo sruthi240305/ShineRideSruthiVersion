@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: #F6CE71;
+  color: #1a1a1a;
 }
 
 .logo-text {
@@ -14,22 +14,28 @@ body {
 }
 
 :root {
-  --bg-foundation: #000000;
-  --surface: #121212;
-  --hover: #1a1a1a;
-  --secondary: #71717a;
-  --active: #ffffff;
-  --active-text: #000000;
+  --bg-foundation: #F6CE71;
+  --surface: #FF6500;
+  --hover: #CC561E;
+  --secondary: #CC561E;
+  --active: #1a1a1a;
+  --active-text: #F6CE71;
 
-  /* Popup-specific (purple & black theme) */
-  --popup-bg: #2b0036;
-  /* deep purple */
-  --popup-accent: #9b59b6;
-  /* lighter purple for primary CTA */
-  --popup-text: #000000;
-  /* black text on popup */
-  --popup-contrast: #ffffff;
-  /* white for subtle contrast */
+  /* Popup-specific (Warm Red/Gold theme) */
+  --popup-bg: #C40C0C;
+  /* Red */
+  --popup-accent: #FF6500;
+  /* Orange */
+  --popup-text: #F6CE71;
+  /* Gold text */
+  --popup-contrast: #1a1a1a;
+  /* Black for contrast */
+
+  /* Global Colors */
+  --warm-red: #C40C0C;
+  --warm-orange: #FF6500;
+  --warm-rust: #CC561E;
+  --warm-gold: #F6CE71;
 }
 
 /* Ensure all buttons inside the customer dashboard have a 50px radius */
@@ -58,8 +64,8 @@ body {
 
 @keyframes highlightAction {
   0% {
-    border-color: #a855f7;
-    box-shadow: 0 0 0px rgba(168, 85, 247, 0);
+    border-color: #C40C0C;
+    box-shadow: 0 0 0px rgba(196, 12, 12, 0);
   }
 
   50% {
@@ -69,11 +75,29 @@ body {
   }
 
   100% {
-    border-color: #a855f7;
-    box-shadow: 0 0 0px rgba(168, 85, 247, 0);
+    border-color: #C40C0C;
+    box-shadow: 0 0 0px rgba(196, 12, 12, 0);
   }
 }
 
 .highlight-pulse {
   animation: highlightAction 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* GLOBAL BUTTON THEME OVERRIDE */
+button,
+.btn,
+input[type="submit"],
+input[type="button"],
+[role="button"] {
+  background-color: var(--warm-red) !important;
+  color: var(--warm-gold) !important;
+  border-color: var(--warm-red) !important;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--warm-rust) !important;
+  /* Rust for hover */
+  color: #fff !important;
 }

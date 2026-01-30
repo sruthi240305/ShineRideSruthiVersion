@@ -5,7 +5,7 @@ import WashBaysPage from './admin/WashBaysPage';
 import CouponsPage from './admin/CouponsPage';
 import CustomersPage from './admin/CustomersPage';
 import FeedbackPage from './admin/FeedbackPage';
-import SchedulePage from './admin/SchedulePage';
+
 import AdminDashboardPage from './admin/AdminDashboardPage';
 import { useSearchParams } from 'react-router-dom';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -19,7 +19,7 @@ const tabs = [
     { key: 'coupons', label: 'Coupons & Campaigns' },
     { key: 'customers', label: 'Customers' },
     { key: 'feedback', label: 'Customer Feedback' },
-    { key: 'schedule', label: 'Service Schedule' },
+
 ];
 
 const AdminPage = () => {
@@ -47,7 +47,7 @@ const AdminPage = () => {
             {activeTabKey === 'coupons' && <CouponsPage />}
             {activeTabKey === 'customers' && <CustomersPage />}
             {activeTabKey === 'feedback' && <FeedbackPage />}
-            {activeTabKey === 'schedule' && <SchedulePage />}
+
         </div>
     );
 };

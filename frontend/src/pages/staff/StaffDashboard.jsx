@@ -77,7 +77,7 @@ export default function StaffDashboard() {
     }}>
       {/* Header */}
       <div style={{ marginBottom: '40px' }}>
-        <h1 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '8px' }}>Service Dashboard</h1>
+        <h1 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '9px' }}>Service Dashboard</h1>
         <p style={{ color: '#888', fontSize: '16px' }}>Manage vehicle services and repairs</p>
       </div>
 

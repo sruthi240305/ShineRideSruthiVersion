@@ -16,14 +16,7 @@ const CustomerDashboardPage = () => {
                     Customer Dashboard
                 </h1>
 
-                {/* Scroll Velocity Component */}
-                <div className="mb-12 py-12 border-t border-b border-[var(--border)]">
-                    <ScrollVelocity
-                        texts={['Welcome to Shine Ride', 'Premium Car Wash Service']}
-                        velocity={50}
-                        className="text-6xl font-bold uppercase text-[var(--secondary)] opacity-50"
-                    />
-                </div>
+                
 
 
             </div>

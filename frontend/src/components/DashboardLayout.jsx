@@ -14,7 +14,7 @@ const DashboardLayout = () => {
         { label: 'Coupons', link: '/admin-dashboard?tab=coupons', ariaLabel: 'Coupons' },
         { label: 'Customers', link: '/admin-dashboard?tab=customers', ariaLabel: 'Customers' },
         { label: 'Feedback', link: '/admin-dashboard?tab=feedback', ariaLabel: 'Feedback' },
-        { label: 'Schedule', link: '/admin-dashboard?tab=schedule', ariaLabel: 'Schedule' },
+
         {
             label: 'Logout',
             link: '/',
@@ -61,14 +61,14 @@ const DashboardLayout = () => {
             : defaultMenuItems;
 
     return (
-        <div className="min-h-screen" style={{ backgroundColor: '#000000' }}>
+        <div className="min-h-screen" style={{ backgroundColor: '#F6CE71' }}>
             <StaggeredMenu
                 isFixed
                 items={dashboardMenuItems}
                 displayItemNumbering={false}
-                colors={['#000000', '#0a0a0a', '#1e1033']}
-                accentColor="#a855f7"
-                menuButtonColor="#ffffff"
+                colors={['#CC561E', '#FF6500', '#C40C0C']}
+                accentColor="#C40C0C"
+                menuButtonColor="#C40C0C"
             />
             <div style={{ width: '100%', minHeight: '100vh' }}>
                 <Outlet />
